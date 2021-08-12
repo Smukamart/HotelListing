@@ -58,7 +58,7 @@ namespace HotelListing.Repository
                     query = query.Include(includePropery);
                 }
             }
-            if (query != null)
+            if (orderBy != null)
             {
                 query = orderBy(query);
             }
